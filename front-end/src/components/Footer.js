@@ -19,7 +19,7 @@ export default class Footer extends Component {
                  </ul>
       
                  <ul className="copyright">
-                    <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>
+                    <li>&copy; Vinh Tran</li>
                  </ul>
       
               </div>
