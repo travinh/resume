@@ -1,13 +1,13 @@
 {
   "main": {
     "name":"Vinh Tran",
-    "description":"I am a software engineer/ web developer. With this project, I use react for my front end and Ruby on Rails for my back end.",
-    "image":"profilepic.jpg",
-    "bio":"Bio",
+    "description":"I am a software engineer and a web developer. With this project, I use react for my front end and Ruby on Rails for my back end",
+    "image":"VinhTran.jpeg",
+    "bio":"",
     "contactmessage":"You can contact me at any time during weekday.",
     "email": "vinh.v.tran@ucdenver.edu",
     "phone": "720-579-1345",
-    "github":"https://github.com/travinh/resume",
+    "github":"https://github.com/travinh",
     "project":"https://github.com/travinh/resume",
     "address":{
       "street":"405 167th Blvd E",
@@ -56,13 +56,13 @@
         "company":"Arbor Tutor",
         "title":"Tutor",
         "years":"Jun 2015 - Sep 2018",
-        "description":"Tutored General Math Courses: Calculus II and below for over 50 students to assist bringing their GPA to over 3.7."
+        "description":"Tutored General Math Courses: Calculus II and below for over 50 students to assist bringing their GPA to over 3.7. Provided feedback to students using positive reinforcement techniques to encourage, motivate, and build confidence in students. Assisted in assembling lesson plans to administer to students and keep them on track with assignments. Provided private instruction to individual or small groups of students to improve academic performance.  "
       },
       {
         "company":"Level Terrain",
         "title":"Web Development Internshi",
         "years":"Jun 2017 - Aug 2017",
-        "description":"Worked on front-end of a Web Project using HTML, CSS and JavaScript."
+        "description":"Worked on front-end of a Web Project using HTML, CSS and JavaScript. Learned mySQL for database management, Java and RESTful API webservices for back-end. Collaborated closely with a team of five other members, pro-actively participated in weekly team meeting and conducted report on the project’s progress. Used Git for code management and to keep tracking team progress. Assisted in maintenance of software engineering web application. Provided phone support to end-user on the team software product."        
       }
     ],
     "skills":[
