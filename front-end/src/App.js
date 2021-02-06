@@ -1,12 +1,29 @@
 import './App.css';
+import React, {Component} from 'react';
+import ReactGA from 'react-ga';
+import $ from 'jquery';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>hello</h1>
+import React, { Component } from 'react'
+
+export default class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <h1>hello</h1>
       
-    </div>
-  );
+      </div>
+    )
+  }
 }
 
-export default App;
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <h1>hello</h1>
+      
+//     </div>
+//   );
+// }
+
+// export default App;
