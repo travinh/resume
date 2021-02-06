@@ -1,0 +1,117 @@
+{
+  "main": {
+    "name":"Vinh Tran Project",
+    "description":"I am a software engineer/ web developer. With this project, I use react for my front end and Ruby on Rails for my back end.",
+    "image":"profilepic.jpg",
+    "bio":"Bio",
+    "contactmessage":"You can contact me at any time during weekday.",
+    "email": "vinh.v.tran@ucdenver.edu",
+    "phone": "720-579-1345",
+    "github":"https://github.com/travinh/resume",
+    "project":"https://github.com/travinh/resume",
+    "address":{
+      "street":"405 167th Blvd E",
+      "city":"Bradenton",
+      "state":"Florida",
+      "zip": "34212"
+    },
+    "website": "https://www.linkedin.com/in/vinh-tran-6520b2186/",
+    "resumedownload":"https://www.linkedin.com/in/vinh-tran-6520b2186/",
+    "social":[
+      {
+        "name":"facebook",
+        "url":"https://www.facebook.com/vinh.tran0101/",
+        "className":"fa fa-facebook"
+      },
+      {
+        "name":"linkedin",
+        "url":"https://www.linkedin.com/in/vinh-tran-6520b2186/",
+        "className":"fa fa-linkedin"
+      },
+      {
+        "name":"github",
+        "url":"https://github.com/travinh/resume",
+        "className":"fa fa-github"
+      }
+    ]
+  },
+  "resume":{
+    "skillmessage":"Here is my skills level",
+    "education":[
+      {
+        "school":"University of Colorado Denver",
+        "degree":"Bachelor of science",
+        "graduated":"May 2019",
+        "description":"I have taken many classes in Computer Science to tried to be a good computer science programmer."
+      },
+      {
+        "school":"Flatiron Bootcamp Coding",
+        "degree":"Software Engineer",
+        "graduated":"Jan 2021",
+        "description":"Since university has given me wide knowledge, I need a school to learn deeply. "
+      }
+    ],
+    "work":[
+      {
+        "company":"Arbor Tutor",
+        "title":"Tutor",
+        "years":"Jun 2015 - Sep 2018",
+        "description":"Tutored General Math Courses: Calculus II and below for over 50 students to assist bringing their GPA to over 3.7."
+      },
+      {
+        "company":"Level Terrain",
+        "title":"Web Development Internshi",
+        "years":"Jun 2017 - Aug 2017",
+        "description":"Worked on front-end of a Web Project using HTML, CSS and JavaScript."
+      }
+    ],
+    "skills":[
+      {
+        "name":"C++",
+        "level":"70%"
+      },
+      {
+        "name":"Python",
+        "level":"50%"
+      },
+      {
+        "name":"Assembly",
+        "level":"50%"
+      },
+      {
+        "name":"ReactJs",
+        "level":"70%"
+      },
+      {
+        "name":"CSS/HTML",
+        "level":"60%"
+      },
+      {
+        "name":"PHP",
+        "level":"30%"
+      },
+      {
+        "name":"Ruby on Rails",
+        "level":"70%"
+      },
+      {
+        "name":"JAVA",
+        "level":"50%"
+      },
+      {
+        "name":"mySQL",
+        "level":"60%"
+      }
+    ]
+  },
+  "portfolio":{
+    "projects": [
+      {
+        "title":"Team Schedule using JS, react/redux and API",
+        "category":"Schedules of a team",
+        "image":"canadian-wanderlust.jpg",
+        "url":"https://github.com/travinh/team-schedule-railsAPI-react"
+      }
+    ]
+  }
+}
