@@ -1,24 +1,92 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the database for Vinh's resume. It contains Vinh's personal information to used for Vinh's website.
 
-Things you may want to cover:
+This api using Ruby on Rails with Postgresql for database. 
 
-* Ruby version
+Here is the structure of json file:
 
-* System dependencies
+{
+  "main": {
+    "name":"",
+    "description":"",
+    "image":"",
+    "bio":"",
+    "contactmessage":"",
+    "email": "",
+    "phone": "",
+    "github":"",
+    "project":"",
+    "address":{
+      "street":"",
+      "city":"",
+      "state":"",
+      "zip": ""
+    },
+    "website": "",
+    "resumedownload":"",
+    "social":[
+      {
+        "name":"facebook",
+        "url":"",
+        "className":""
+      },
+      {
+        "name":"linkedin",
+        "url":"",
+        "className":"fa fa-linkedin"
+      },
+      {
+        "name":"github",
+        "url":"",
+        "className":"fa fa-github"
+      }
+    ]
+  },
+  "resume":{
+    "skillmessage":"",
+    "education":[
+      {
+        "school":"",
+        "degree":"",
+        "graduated":"",
+        "description":""
+      }
+    ],
+    "work":[
+      {
+        "company":"",
+        "title":"",
+        "years":"",
+        "description":""
+      }
+    ],
+    "skills":[
+      {
+        "name":"C++",
+        "level":"70%"
+      }
+    ]
+  },
+  "portfolio":{
+    "projects": [
+      {
+        "title":"",
+        "category":"",
+        "image":"",
+        "url":""
+      }
+    ]
+  }
+}
 
-* Configuration
 
-* Database creation
+### Requirements
+- Make sure you have Postgresql and run it
 
-* Database initialization
+- Need to add these 2 gems to have the structure above
+gem 'fast_jsonapi'
+gem "active_model_serializers", "~> 0.10.12"
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Then Run: 
+bundle install
