@@ -5,17 +5,16 @@ export default class Header extends Component {
 
     
     render() {
-        console.log("header props: ",this.props)
 
         if(this.props.data){
             var project = this.props.data.project;
             var github = this.props.data.github;
            var name = this.props.data.name;
            var description= this.props.data.description;
-           var city= this.props.data.address.city;
-           var networks= this.props.data.social.map(function(network){
-             return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
-           })
+        //    var city= this.props.data.address.city;
+        //    var networks= this.props.data.socials.map(function(network){
+        //      return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
+        //    })
          }
         return (
             <header id="home"> 
