@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :skills
+  resources :works
+  resources :educations
+  resources :resumes
   namespace :api do 
     namespace :v1 do
       resources :mains
