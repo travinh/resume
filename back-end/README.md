@@ -101,3 +101,5 @@ rails g resource main name description image bio contactmessage email phone gith
 rails db:create  => create database development and test
 * If they already exist, you can drop it by running: rake db:drop and create again
 rails db:migrate => migrate your database
+
+- Change controller to customize index,show,create function
