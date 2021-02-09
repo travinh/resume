@@ -90,3 +90,9 @@ gem "active_model_serializers", "~> 0.10.12"
 
 Then Run: 
 bundle install
+
+Steps:
+- Generate models: address, social and main and make relationship between them in model and serializer
+rails g resource address street city state zip
+rails g resource social name url className main_id  
+rails g resource main name description image bio contactmessage email phone github project website resumedownload address_id social_id
