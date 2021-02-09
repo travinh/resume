@@ -21,19 +21,19 @@ export default class App extends Component {
   };
 
   getResumeData(){
-    // $.ajax({
-    //   url:'./resumeData.json',
-    //   dataType:'json',
-    //   cache: false,
-    //   success: function(data){
-    //     console.log("data 1: ",data);
-    //     this.setState({resumeData: data});
-    //   }.bind(this),
-    //   error: function(xhr, status, err){
-    //     console.log(err);
-    //     alert(err);
-    //   }
-    // });
+    $.ajax({
+      url:'./resumeData.json',
+      dataType:'json',
+      cache: false,
+      success: function(data){
+        console.log("data 1: ",data);
+        this.setState({resumeData: data});
+      }.bind(this),
+      error: function(xhr, status, err){
+        console.log(err);
+        alert(err);
+      }
+    });
     $.ajax({
       type: "GET",
       url:'http://localhost:3000/api/v1/mains/1',
@@ -76,13 +76,14 @@ export default class App extends Component {
 
 
   render() {
+    console.log("Porfolio in app: ",this.state.resumeData.portfolio)
   
     return (
       <div className="App">
         <Header data={this.state.resumeData2}/>
         <About data={this.state.resumeData2}/>
         <Resume data={this.state.resumeData3}/>
-        {/* <Portfolio data={this.state.resumeData.portfolio}/> */}
+        <Portfolio data={this.state.resumeData.portfolio}/>
         <Contact data={this.state.resumeData2}/>
         <Footer data={this.state.resumeData2}/>
       
