@@ -1,4 +1,4 @@
-class SocialsController < ApplicationController
+class Api::V1::SocialsController < ApplicationController
     before_action :set_social, only: [:show]
     def index
         @social = Social.all 

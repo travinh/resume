@@ -102,4 +102,6 @@ rails db:create  => create database development and test
 * If they already exist, you can drop it by running: rake db:drop and create again
 rails db:migrate => migrate your database
 
-- Change controller to customize index,show,create function
+- Change controller to customize index,show,create function. Make sure you change structure to what you want to show.
+
+- Create namspace for API and move all controller to folder API/v1 and add API::V1 for those classes

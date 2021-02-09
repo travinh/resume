@@ -1,4 +1,4 @@
-class MainsController < ApplicationController
+class Api::V1::MainsController < ApplicationController
     before_action :set_main, only: [:show]
     def index
         @main = Main.all 
