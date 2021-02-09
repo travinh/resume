@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_08_235942) do
+ActiveRecord::Schema.define(version: 2021_02_09_010014) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,16 @@ ActiveRecord::Schema.define(version: 2021_02_08_235942) do
     t.string "state"
     t.string "zip"
     t.string "main_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "educations", force: :cascade do |t|
+    t.string "school"
+    t.string "degree"
+    t.string "graduated"
+    t.string "description"
+    t.string "resume_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -43,11 +53,38 @@ ActiveRecord::Schema.define(version: 2021_02_08_235942) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "resumes", force: :cascade do |t|
+    t.string "skillmessage"
+    t.string "education_id"
+    t.string "work_id"
+    t.string "skills_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "skills", force: :cascade do |t|
+    t.string "name"
+    t.string "level"
+    t.string "resume_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "socials", force: :cascade do |t|
     t.string "name"
     t.string "url"
     t.string "className"
     t.string "main_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "works", force: :cascade do |t|
+    t.string "company"
+    t.string "title"
+    t.string "years"
+    t.string "description"
+    t.string "resume_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -21,6 +21,19 @@ export default class App extends Component {
   };
 
   getResumeData(){
+    // $.ajax({
+    //   url:'./resumeData.json',
+    //   dataType:'json',
+    //   cache: false,
+    //   success: function(data){
+    //     this.setState({resumeData: data});
+    //   }.bind(this),
+    //   error: function(xhr, status, err){
+    //     console.log(err);
+    //     alert(err);
+    //   }
+    // });
+
     $.ajax({
       url:'./resumeData.json',
       dataType:'json',

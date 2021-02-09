@@ -6,9 +6,10 @@ class Api::V1::ResumesController < ApplicationController
     end
 
     def show
-        render :json => @resume.to_json(include: [{:education => {:only => [:school, :degree, :graduated,:description]}},
-                                                {:work => {:only => [:company, :title, :years, :description]}},
-                                                {:skill => {:only => [:name, :level]}} ])
+        render :json => @resume.to_json(include: [{:educations => {:only => [:school, :degree, :graduated,:description]}},
+                                                {:works => {:only => [:company, :title, :years, :description]}},
+                                                {:skills => {:only => [:name, :level]}} ])
+        # render json: @resume
     end
 
     def create
