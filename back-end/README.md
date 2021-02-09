@@ -105,3 +105,11 @@ rails db:migrate => migrate your database
 - Change controller to customize index,show,create function. Make sure you change structure to what you want to show.
 
 - Create namspace for API and move all controller to folder API/v1 and add API::V1 for those classes
+
+- Run: 
+Rails c and add infomation for those models or Open seed file and start creating data (rails db:seed). 
+
+Rails s to start server
+
+
+
