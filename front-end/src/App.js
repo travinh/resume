@@ -34,35 +34,35 @@ export default class App extends Component {
         alert(err);
       }
     });
-    $.ajax({
-      type: "GET",
-      url:'http://localhost:3000/api/v1/mains/1',
-      dataType:'json',
-      cache: false,
-      success: function(data){
-        this.setState({resumeData2: data});
+    // $.ajax({
+    //   type: "GET",
+    //   url:'http://localhost:3000/api/v1/mains/1',
+    //   dataType:'json',
+    //   cache: false,
+    //   success: function(data){
+    //     this.setState({resumeData2: data});
         
-      }.bind(this),
-      error: function(xhr, status, err){
-        console.log(err);
-        alert(err);
-      }
-    });
-    $.ajax({
-      type: "GET",
-      url:'http://localhost:3000/api/v1/resumes/1',
-      dataType:'json',
-      cache: false,
-      success: function(data){
-        console.log("data 2: ",data);
-        this.setState({resumeData3: data});
+    //   }.bind(this),
+    //   error: function(xhr, status, err){
+    //     console.log(err);
+    //     alert(err);
+    //   }
+    // });
+    // $.ajax({
+    //   type: "GET",
+    //   url:'http://localhost:3000/api/v1/resumes/1',
+    //   dataType:'json',
+    //   cache: false,
+    //   success: function(data){
+    //     console.log("data 2: ",data);
+    //     this.setState({resumeData3: data});
         
-      }.bind(this),
-      error: function(xhr, status, err){
-        console.log(err);
-        alert(err);
-      }
-    });
+    //   }.bind(this),
+    //   error: function(xhr, status, err){
+    //     console.log(err);
+    //     alert(err);
+    //   }
+    // });
 
 
   }
@@ -80,12 +80,19 @@ export default class App extends Component {
   
     return (
       <div className="App">
-        <Header data={this.state.resumeData2}/>
+        {/* <Header data={this.state.resumeData2}/>
         <About data={this.state.resumeData2}/>
         <Resume data={this.state.resumeData3}/>
         <Portfolio data={this.state.resumeData.portfolio}/>
         <Contact data={this.state.resumeData2}/>
-        <Footer data={this.state.resumeData2}/>
+        <Footer data={this.state.resumeData2}/> */}
+
+        <Header data={this.state.resumeData.main}/>
+        <About data={this.state.resumeData.main}/>
+        <Resume data={this.state.resumeData.resume}/>
+        <Portfolio data={this.state.resumeData.portfolio}/>
+        <Contact data={this.state.resumeData.main}/>
+        <Footer data={this.state.resumeData.main}/>
       
       </div>
     )

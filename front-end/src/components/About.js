@@ -1,4 +1,15 @@
 import React, { Component } from 'react'
+// import FileSaver from 'file-saver';
+import {BrowserRouter as Router, Link} from 'react-router-dom'
+
+
+
+
+
+// function handleClick(e){
+//    var blob = new Blob(["Hello, world!"], {type: "text/plain;charset=utf-8"});
+//    FileSaver.saveAs(blob, "hello world.txt");
+// }
 
 export default class About extends Component {
     render() {
@@ -15,7 +26,10 @@ export default class About extends Component {
             var email = this.props.data.email;
             var resumeDownload = this.props.data.resumedownload;
           }
-      
+
+         
+          
+
         return (
             <section id="about">
             <div className="row">
@@ -40,7 +54,13 @@ export default class About extends Component {
                      </div>
                      <div className="columns download">
                         <p>
-                           <a href={resumeDownload} className="button"><i className="fa fa-download"></i>Download Resume</a>
+                           {/* <a href={resumeDownload} className="button"><i className="fa fa-download"></i>Download Resume</a> */}
+                           <Router>
+                              <button><Link to="/resume.pdf" target="_blank" download>Download Resume</Link> </button>
+                              
+                           </Router>
+                          
+                           
                         </p>
                      </div>
                   </div>
